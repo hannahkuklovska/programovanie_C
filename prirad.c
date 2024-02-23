@@ -3,11 +3,11 @@
 int main()
 {
 
-     unsigned short int h = 70000;
+     unsigned short int h = 300;
      unsigned char ch;
 
      ch = h;
 
-     printf();
-     printf();
+     printf("Hodnota pred: %u \n", h);
+     printf("Hodnota po: %u \n", ch);
 }
