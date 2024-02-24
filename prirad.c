@@ -12,4 +12,6 @@ int main()
      printf("Hodnota po: %u \n", ch);
 
      return 0;
+
+     // doslo k strate hodnoty, ulozila sa mensia hodnota, strata 300, po pretypovani vyjde 44
 }
