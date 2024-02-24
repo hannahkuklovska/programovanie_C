@@ -6,7 +6,7 @@ int main()
      unsigned short int n = &e;
 
      printf("Adresa %u je: %p \n", e, &e);
-     printf("Potom: %u \n", &n);
+     printf("Potom: %u \n", n);
 
      return 0;
 }
