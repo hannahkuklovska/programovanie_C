@@ -3,10 +3,10 @@
 int main()
 {
      unsigned short int e = 1234;
-     unsigned short int n = &e;
+     unsigned char *n = &e;
 
      printf("Adresa %u je: %p \n", e, &e);
-     printf("Potom: %u \n", n);
+     printf("Potom: %p \n", &n);
 
      return 0;
 }
