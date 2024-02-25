@@ -2,11 +2,19 @@
 
 int main()
 {
-     unsigned short int e = 1234;
-     unsigned char *n = &e;
+     unsigned short int e = 12;
+     unsigned char ea = &e; // ulozenie adresy;
+     // potrebujem sa dostať k adrese bajtu, ci je adresa 1 mensia ako
+     // adresa 2, ak ano, je to LE, ak nie BE
 
-     printf("Adresa %u je: %p \n", e, &e);
-     printf("Potom: %p \n", &n);
+     if ()
+     {
+          printf("Little endian.\n");
+     }
+     else
+     {
+          printf("Big endian.\n");
+     }
 
      return 0;
 }
