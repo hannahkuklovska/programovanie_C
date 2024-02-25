@@ -2,13 +2,13 @@
 
 int main()
 {
-     unsigned short int e = 12;
-     unsigned short int g = e + 1;
+     unsigned short int e = 21;
+     unsigned short int g = 32;
      unsigned char *ea = (unsigned char *)&e;
      unsigned char *ga = (unsigned char *)&g;
 
      // adresa prveho bytu;
-     if ((ga) < ea)
+     if (ga < ea)
      {
           printf("Little endian.\n");
      }
