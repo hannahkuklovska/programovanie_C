@@ -3,11 +3,12 @@
 int main()
 {
      unsigned short int e = 12;
-     unsigned char ea = &e; // ulozenie adresy;
-     // potrebujem sa dostať k adrese bajtu, ci je adresa 1 mensia ako
-     // adresa 2, ak ano, je to LE, ak nie BE
+     unsigned short int g = e + 1;
+     unsigned char *ea = (unsigned char *)&e;
+     unsigned char *ga = (unsigned char *)&g;
 
-     if ()
+     // adresa prveho bytu;
+     if ((ga) < ea)
      {
           printf("Little endian.\n");
      }
