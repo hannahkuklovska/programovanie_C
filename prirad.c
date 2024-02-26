@@ -3,7 +3,7 @@
 int main()
 {
 
-     unsigned short int h = 300; // 16 bitov
+     unsigned short int h = 300; // 16 bitov //00000001 00101100
      unsigned char ch;           // 8 bitov
 
      ch = (unsigned char)h; // pretypovanie
@@ -17,5 +17,5 @@ int main()
 
      // doslo k strate hodnoty, ulozila sa mensia hodnota, strata 300, po pretypovani vyjde 44 (300-256)
      // zostala iba hodnota 8 bitov (least significant)
-     // cita tym padom z prava do lava (?)
+     // cita tym padom z prava do lava (44 v binarnej sustave je 00101100), ostatne hodnoty sa stratia
 }
