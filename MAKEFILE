@@ -1,0 +1,9 @@
+#Makefile pre zistenie Endianity 
+#Hannah Kuklovská
+#Zadanie 1, časť 1
+
+CC=gcc
+CFLAGS = -Wall -Werror
+
+endiam: endiam.c
+    $(CC) $(CFLAGS) -o endiam endiam.c
