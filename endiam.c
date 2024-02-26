@@ -2,17 +2,23 @@
 
 int main(void)
 {
-     unsigned int e = 0b101010100000000011111111;
-     unsigned char *e_ad = (unsigned char *)&e;
+     unsigned int e = 3;      // 00 00 00 11 (binarna sustava)
+     char *e_ad = (char *)&e; // pointer na adresu e, ale e uz teraz pretypovane na char
 
-     printf("Hexadecimal representation bajtu je: %x\n", *e_ad);
-     if (*e_ad == 0b11111111)
+     printf("%x\n", e_ad);
+
+     if (*e_ad == 3)
      {
           printf("Little endian.\n");
      }
-     else
+     else if (*e_ad == 0)
      {
           printf("Big endian.\n");
+     }
+
+     else
+     {
+          printf("Niečo sa pokazilo.\n");
      }
 
      return 0;
