@@ -5,8 +5,8 @@ int main()
 
      unsigned short int h = 300; // 16 bitov //00000001 00101100
      unsigned char ch;           // 8 bitov
-     printf("Veľkosť unsigned char: %lu\n", sizeof(unsigned char));
-     printf("Veľkosť unsigned short int: %lu\n", sizeof(unsigned short int));
+     printf("Veľkosť unsigned char: %u\n", sizeof(unsigned char));
+     printf("Veľkosť unsigned short int: %u\n", sizeof(unsigned short int));
      ch = (unsigned char)h; // pretypovanie
 
      printf("Hodnota pred: %u \n", h);
