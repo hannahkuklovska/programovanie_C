@@ -1,4 +1,4 @@
-#Makefile pre zistenie Endianity a Priradenie int do char 
+#Makefile pre zistenie Endianity a Priradenie int do char + zadanie 1
 #Hannah Kuklovská
 #Zadanie 1
 
@@ -8,12 +8,14 @@ CFLAGS = -Wall -Wextra -pedantic
 # Source files
 ENDIAM_SOURCE = endiam.c
 PRIRAD_SOURCE = prirad.c
+MTA_ODMOCNINA_SOURCE = mta_odmocnina.c
 
 # Executables
 ENDIAM_OUTPUT = endiam
 PRIRAD_OUTPUT = prirad
+MTA_ODMOCNINA_SOURCE = mta_odmocnina
 
-all: $(ENDIAM_OUTPUT) $(PRIRAD_OUTPUT)
+all: $(ENDIAM_OUTPUT) $(PRIRAD_OUTPUT) $(MTA_ODMOCNINA_SOURCE)
 
 $(ENDIAM_OUTPUT): $(ENDIAM_SOURCE)
 	$(CC) $(CFLAGS) -o $(ENDIAM_OUTPUT) $(ENDIAM_SOURCE)
@@ -21,5 +23,8 @@ $(ENDIAM_OUTPUT): $(ENDIAM_SOURCE)
 $(PRIRAD_OUTPUT): $(PRIRAD_SOURCE)
 	$(CC) $(CFLAGS) -o $(PRIRAD_OUTPUT) $(PRIRAD_SOURCE)
 
+$(MTA_ODMOCNINA_SOURCE): $(MTA_ODMOCNINA_SOURCE)
+	$(CC) $(CFLAGS) -o $(MTA_ODMOCNINA_SOURCE) $(MTA_ODMOCNINA_SOURCE)
+
 clean:
-	rm -f $(ENDIAM_OUTPUT) $(PRIRAD_OUTPUT)
+	rm -f $(ENDIAM_OUTPUT) $(PRIRAD_OUTPUT) $(MTA_ODMOCNINA_SOURCE)

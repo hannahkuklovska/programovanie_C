@@ -13,6 +13,13 @@ double mta_odmocnina(unsigned int m, double x)
      {
           return 1;
      }
+
+     int vysledok;
+     for (int i = 0; i < m; i++)
+     {
+          vysledok = mocnina(x, 1 / m);
+     }
+     return vysledok;
 }
 
 double mocnina(double mocnenec, int exponent)
