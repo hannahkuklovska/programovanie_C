@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <math.h>
 
 double mta_odmocnina(int m, double x);
-double mocnina(double mocnenec, int exponent);
+double mocnina(double mocnenec, double exponent);
 
 int main(void)
 {
@@ -11,7 +12,7 @@ int main(void)
      double vysledok = mta_odmocnina(m, x);
      printf("%lf\n", vysledok);
 
-     return 0;
+     printf("%lf\n", mocnina(x, 1.0 / m));
 }
 
 double mta_odmocnina(int m, double x)
@@ -25,7 +26,7 @@ double mta_odmocnina(int m, double x)
      return vysledok;
 }
 
-double mocnina(double mocnenec, int exponent)
+double mocnina(double mocnenec, double exponent)
 {
      double vysledok = 1.0;
      for (int i = 0; i < exponent; i++)
