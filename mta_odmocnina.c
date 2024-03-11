@@ -2,14 +2,15 @@
 
 #define tol 0.0001
 #define abs(n) (((n) < 0) ? -(n) : (n))
-#define hod 100000
+#define hod 10000
 
 double mta_odmocnina(int m, double x);
 double mocnina(double mocnenec, double exponent);
 
 int main(void)
 {
-     int m, x;
+     double x;
+     int m;
 
      printf("Zadajte cislo: ");
      scanf("%d", &x);
@@ -23,7 +24,7 @@ int main(void)
           return -1;
      }
 
-     printf("%dta odmocnina z %d je: %lf\n", m, x, mta_odmocnina(m, x));
+     printf("%dta odmocnina z %lf je: %lf\n", m, x, mta_odmocnina(m, x));
 
      return 0;
 }
