@@ -73,10 +73,12 @@ double mocnina(double mocnenec, double exponent)
 
      double vysledok = 1.0;
 
-     for (int i = 0; i < exponent; i++)
+     for (int i = 0; i < abs(exponent); i++)
      {
           vysledok *= mocnenec;
      }
+     if (exponent < 0)
+          return 1 / vysledok;
 
      return vysledok;
 }
