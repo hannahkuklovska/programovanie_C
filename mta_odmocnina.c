@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+#define tol 0.0001
+#define abs(n) (((n) < 0) ? -(n) : (n))
+
 double mta_odmocnina(int m, double x);
 double mocnina(double mocnenec, double exponent);
 
@@ -38,8 +41,18 @@ double mta_odmocnina(int m, double x)
           return -1;
      }
 
-     double vysledok = mocnina(x, 1.0 / m);
-     return vysledok;
+     double pomoc = 1.0;
+     int i;
+
+     for (int i = 0; i < m; i++)
+     {
+          if (pomoc * pomoc > x)
+          {
+               break;
+          }
+          pomoc += tol;
+     }
+     // while (abs(m / pomoc - pomoc) > tol)
 }
 
 double mocnina(double mocnenec, double exponent)
