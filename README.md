@@ -1,4 +1,4 @@
-# Program zvaný odmocnina
+# Program zvaný odmocnina :abacus:
 
 Tento program je pokusom o vytvorenie spôsobu na výpočet m_tej odmocniny bez použitia knižnice math.
 
@@ -10,4 +10,4 @@ Knižnica math prácu výrazne zjednodušuje, avšak práca bez nej vedie k lep�
 #include<math.h>
 ```
 
-Je pozoruhodné, akú silu má jeden takýto riadok v programe, riešení problému
+Je pozoruhodné, akú silu má jeden takýto riadok v programe, riešení problému.:mage:
