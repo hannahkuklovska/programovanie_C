@@ -12,19 +12,19 @@ int main(void)
      double x;
      int m;
 
-     printf("Zadajte cislo: ");
-     scanf("%d", &x);
+     // printf("Zadajte cislo: ");
+     // scanf("%d", &x);
 
-     printf("Zadajte odmocninu (m): ");
-     scanf("%d", &m);
+     // printf("Zadajte odmocninu (m): ");
+     // scanf("%d", &m);
 
-     if (m < 0)
-     {
-          printf("Chyba: Odmocnina zo zaporneho cisla.\n");
-          return -1;
-     }
-
-     printf("%dta odmocnina z %lf je: %lf\n", m, x, mta_odmocnina(m, x));
+     // if (m < 0)
+     //{
+     //  printf("Chyba: Odmocnina zo zaporneho cisla.\n");
+     //  return -1;
+     // }
+     printf("%lf\n", mta_odmocnina(2, 4));
+     printf("%lf\n", mocnina(4, -2));
 
      return 0;
 }
